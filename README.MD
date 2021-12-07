@@ -26,6 +26,7 @@ The database used in the backed is DynamoDB
 
 Monitoring can be done using Cloudwatch and metrics and logs are getting pushed to it.
 
+  <img src="/Architecture_Diagrams/API_App.PNG" alt="HTTP API"/>
 
 # How to use the code
 
