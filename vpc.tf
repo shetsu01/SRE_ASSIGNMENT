@@ -9,6 +9,6 @@ data "aws_subnet_ids" "default" {
 
 
 module "vpc-public-private" {
-  source  = "./terraform-aws-vpc-public-private"
+  source  = "./vpc-public-private"
 
 }
