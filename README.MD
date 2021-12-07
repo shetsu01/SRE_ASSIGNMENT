@@ -2,7 +2,7 @@
 
 # Architecture Diagram
 
-  <img src="/Architecture_Diagrams/Wordpress_Site.PNG" alt="WordPress"/>
+  <img src="/Architecture_Diagrams/Wordpress_Site.png" alt="WordPress"/>
 
 The one step that we need to do post installing the code using terraform is to create a database user for the app to talk to the RDS database.
 
