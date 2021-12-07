@@ -1,0 +1,47 @@
+role:
+  name: "http-crud-assignment-role"
+
+Lambda:
+  function_name: "http-crud-assignment-function"
+  runtime: "nodejs14.x"
+  handler: "index.handler"
+  filename: "code/index.zip"
+
+DynamoDB:
+  dynamodb_name: "http-crud-assignment-items"
+  hash_key: "id"
+  billing_mode: "PROVISIONED"
+
+ApiGateway:
+  apigateway_name: "http-crud-assignment-api"
+  protocol_type: "HTTP"
+  route_key: "$default"
+
+Resource_group:
+  service:
+    name: "user-service-sg"
+  db:
+    name: "rds-service-sg"
+
+RDS:
+  identifier: "wordpress"
+  engine: "mysql"
+  engine_version: "8.0.23"
+  family: "mysql8.0" # DB parameter group
+  major_engine_version: "8.0"      # DB option group
+  instance_class: "db.t3.micro"
+  allocated_storage: 20
+  max_allocated_storage: 100
+  storage_encrypted: false
+  db_name: "wordpress"
+  username: "admin"
+  password: "Welcome123"
+  port: 3306
+  multi_az: true
+  maintenance_window: "Mon:00:00-Mon:03:00"
+  backup_window: "03:00-06:00"
+  backup_retention_period: 0
+  skip_final_snapshot: true
+  deletion_protection: false
+  DB_user: "wordpress"
+  DB_pass: "Sreadmin@123"
