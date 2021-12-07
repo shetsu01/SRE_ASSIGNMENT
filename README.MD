@@ -37,23 +37,23 @@ Monitoring can be done using Cloudwatch and metrics and logs are getting pushed 
 * The worpress site can be accessed using the URL : https://wordpress.sre-assignment.click . If you need to create a login for your self use this URL : https://wordpress.sre-assignment.click/wp-login.php
 * The Architecture diagram is in the folder named Architecture_Diagrams within the folder.
 List of recources created for the above project
-> VPC with private & public subnets
-> Routetables for each subnet to control traffic movement
-> NAT Gateway
-> Internet Gateway
-> Autoscalling group with Launch configuation
-> Ec2 instances with host the webserver
-> Load balancer
-> Domain name
-> Route53 hosted zone entry
-> ACM for domain certificate
+> VPC with private & public subnets,
+> Routetables for each subnet to control traffic movement,
+> NAT Gateway,
+> Internet Gateway,
+> Autoscalling group with Launch configuation,
+> Ec2 instances with host the webserver,
+> Load balancer,
+> Domain name,
+> Route53 hosted zone entry,
+> ACM for domain certificate,
 > RDS for database
 
 * We have also created a HTTP API(CRUD) using the below resources
-> API Gateway
-> Lambda 
-> DynamoDB
-> Domain Name
+> API Gateway,
+> Lambda ,
+> DynamoDB,
+> Domain Name,
 > ACM
 
 Sample URL that can used to PUT a request
